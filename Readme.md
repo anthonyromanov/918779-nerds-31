@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Антон Романов](https://up.htmlacademy.ru/htmlcss/31/user/918779).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
