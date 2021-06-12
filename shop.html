@@ -14,193 +14,212 @@
 </head>
 
 <body class="page-body">
-    <header>
-        <nav>
-            <img src="img/nerds-logo.svg" width="160" height="65" alt ="Логотип студии дизайна «Нёрдс»">
-            <ul>
-                <li>
-                    <a href="studio.html">Студия</a>
-                </li>
-                <li>
-                    <a href="clients.html">Клиенты</a>
-                </li>
-                <li>
-                    <a href="shop.html">Магазин</a>
-                </li>
-                <li>
-                    <a href="contacts.html">Контакты</a>
-                </li>
-            </ul>
-            <a href="cart.html">Корзина</a>
-        </nav>
-    </header>
 
-    <main>
-        <h1>Магазин готовых шаблонов</h1>
-        <section>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt ="Логотип студии дизайна «Нёрдс»">
+      </a>
+      <ul class="main-navigation-list">
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="studio.html">Студия</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="clients.html">Клиенты</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link current-link" href="shop.html">Магазин</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <a class="main-navigation-link" href="cart.html">Корзина</a>
+    </nav>
+    <h1 class="shop-heading">Магазин готовых шаблонов</h1>
+  </header>
+
+    <main class="container">
+        <section class="filter">
             <h2>Фильтр шаблонов</h2>
             <form method="get" action="https://echo.htmlacademy.ru">
 
-                <fieldset>
-                    <legend>Сетка</legend>
-                    <ul>
-                        <li>
+                <fieldset class="cost">
+                    <legend class="cost-title">Стоимость</legend>
+                    <ul class="cost-list">
+                        <li class="cost-item">
+                            <input id="min-cost" type="text" name="min-cost" placeholder="0" value="0">
+                            <label for="min-cost">От</label>
+                        </li>
+                        <li class="cost-item">
+                            <input id="max-cost" type="text" name="max-cost" placeholder="15000" value="15000">
+                            <label for="max-cost">До</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="mesh">
+                    <legend class="mesh-title">Сетка</legend>
+                    <ul class="mesh-list">
+                        <li class="mesh-item">
                             <input type="radio" name="mesh-group" value="adaptive" id="filter-adaptive" checked>
                             <label for="filter-adaptive">Адаптивная</label>
                         </li>
-                        <li>
+                        <li class="mesh-item">
                             <input type="radio" name="mesh-group" value="fixed" id="filter-fixed">
                             <label for="filter-fixed">Фиксированная</label>
                         </li>
-                        <li>
+                        <li class="mesh-item">
                             <input type="radio" name="mesh-group" value="rubber" id="filter-rubber">
                             <label for="filter-rubber">Резиновая</label>
                         </li>
                     </ul>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Особенности</legend>
-                    <ul>
-                        <li>
+                <fieldset class="features">
+                    <legend class="features-title">Особенности</legend>
+                    <ul class="features-list">
+                        <li class="features-item">
                             <input type="checkbox" name="slider" id="filter-slider" checked>
                             <label for="filter-slider">Слайдер</label>
                         </li>
-                        <li>
+                        <li class="features-item">
                             <input type="checkbox" name="preferences-block" id="filter-preferences-block">
                             <label for="filter-preferences-block">Блок преимуществ</label>
                         </li>
-                        <li>
+                        <li class="features-item">
                             <input type="checkbox" name="news" id="filter-news" checked>
                             <label for="filter-news">Новости</label>
                         </li>
-                        <li>
+                        <li class="features-item">
                             <input type="checkbox" name="gallery" id="filter-gallery">
                             <label for="filter-gallery">Галерея</label>
                         </li>
-                        <li>
+                        <li class="features-item">
                             <input type="checkbox" name="cart" id="filter-cart">
                             <label for="filter-cart">Корзина</label>
                         </li>
                     </ul>
                 </fieldset>
 
-                <button type="submit">Показать</button>
+                <button class="button button-grey" type="submit">Показать</button>
 
             </form>
         </section>
 
-        <section>
+        <section class="sort">
             <h2>Сортировка</h2>
-            <b>Сортировать</b>
-            <ul>
-                <li>по цене</li>
-                <li>по типу</li>
-                <li>по названию</li>
+            <b class="sort-heading">Сортировать</b>
+            <ul class="sort-list">
+                <div class="sort-wrapper">
+                    <li class="sort-item"><button class="range-btn range-btn-active" type="button">по цене</button></li>
+                    <li class="sort-item"><button class="range-btn" type="button">по типу</button></li>
+                    <li class="sort-item"><button class="range-btn" type="button">по названию</button></li>
+                </div>
+                <div class="sort-wrapper">
+                    <li class="sort-item"><button class="range-btn range-btn-active " type="button">От большего к меньшему</button></li>
+                    <li class="sort-item"><button class="range-btn" type="button">От меньшего к большему</button></li>
+                </div>
             </ul>
 
-            <p>
-                <button type="button">От большего к меньшему</button>
-                <button type="button">От меньшего к большему</button>
-            </p>
         </section>
 
-        <section>
+        <section class="catalogue">
             <h2>Каталог шаблонов</h2>
-            <ul>
-                <li>
-                    <a href="#">
-                        <div>
+            <ul class="catalogue-list">
+                <li class="catalogue-item">
+                    <a class="catalogue-link" href="#">
+                        <div class="catalogue-modal">
                             <h3>Sedona</h3>
-                            <p>Информационный сайт для туристов</p>
-                            <p>9900<span>Р</span></p>
+                            <p class="catalogue-modal-text">Информационный сайт для туристов</p>
+                            <p class="catalogue-modal-btn">9900<span>Р</span></p>
                         </div>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
-                        <div>
+                <li class="catalogue-item">
+                    <a class="catalogue-link" href="#">
+                      <div class="catalogue-modal">
                             <h3>Sedona</h3>
-                            <p>Информационный сайт для туристов</p>
-                            <p>9900<span>Р</span></p>
+                            <p class="catalogue-modal-text">Информационный сайт для туристов</p>
+                            <p class="catalogue-modal-btn">9900<span>Р</span></p>
                         </div>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
-                        <div>
+                <li class="catalogue-item">
+                    <a class="catalogue-link" href="#">
+                      <div class="catalogue-modal">
                             <h3>Sedona</h3>
-                            <p>Информационный сайт для туристов</p>
-                            <p>9900<span>Р</span></p>
+                            <p class="catalogue-modal-text">Информационный сайт для туристов</p>
+                            <p class="catalogue-modal-btn">9 900<span>Р</span></p>
                         </div>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
-                        <div>
+                <li class="catalogue-item">
+                    <a class="catalogue-link" href="#">
+                      <div class="catalogue-modal">
                             <h3>Sedona</h3>
-                            <p>Информационный сайт для туристов</p>
-                            <p>9900<span>Р</span></p>
+                            <p class="catalogue-modal-text">Информационный сайт для туристов</p>
+                            <p class="catalogue-modal-btn">9900<span>Р</span></p>
                         </div>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
-                        <div>
+                <li class="catalogue-item">
+                    <a class="catalogue-link" href="#">
+                      <div class="catalogue-modal">
                             <h3>Sedona</h3>
-                            <p>Информационный сайт для туристов</p>
-                            <p>9900<span>Р</span></p>
+                            <p class="catalogue-modal-text">Информационный сайт для туристов</p>
+                            <p class="catalogue-modal-btn">9900<span>Р</span></p>
                         </div>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
-                        <div>
+                <li class="catalogue-item">
+                    <a class="catalogue-link" href="#">
+                      <div class="catalogue-modal">
                             <h3>Sedona</h3>
-                            <p>Информационный сайт для туристов</p>
-                            <p>9900<span>Р</span></p>
+                            <p class="catalogue-modal-text">Информационный сайт для туристов</p>
+                            <p class="catalogue-modal-btn">9900<span>Р</span></p>
                         </div>
                     </a>
                 </li>
             </ul>
 
-            <ul>
-                <li><a>1</a></li>
-                <li><a>21</a></li>
-                <li><a>3</a></li>
-                <li><a>Следующая</a></li>
+            <ul class="pagination-list">
+                <li class="pagination-item"><a class="pagination-link pagination-link-active">1</a></li>
+                <li class="pagination-item"><a class="pagination-link">2</a></li>
+                <li class="pagination-item"><a class="pagination-link">3</a></li>
+                <li class="pagination-item"><a class="pagination-link">Следующая</a></li>
             </ul>
         </section>
 
     </main>
 
     <footer>
-        <section>
-            <h2>Как нас найти</h2>
-            <div>
-                <h3>NЁRDS DESIGN STUDIO</h3>
-                <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>>
-                <a href="tel:+78005558628">+7 800 555-86-28</a>
-                <button type="button">Напишите нам</button>
-            </div>
-        </section>
+      <section class="contacts">
+          <h2>Как нас найти</h2>
+          <div class="contacts-description">
+              <h3>Nёrds design studio</h3>
+              <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+              <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+              <button class="button type="button">Напишите нам</button>
+          </div>
+      </section>
 
-        <section>
-            <h2>Социальные сети</h2>
-            <ul>
-                <li><a href="vk.com">Вконтакте</a></li>
-                <li><a href="facebook.com">Фейсбук</a></li>
-                <li><a href="instagram.com">Инстаграм</a></li>
-            </ul>
-            <p>Давайте дружить, это выгодно!<br>
-                <span>Скидка 10% для друзей из социальных сетей.</span>
-            </p>
-        </section>
+      <section class="social">
+          <h2>Социальные сети</h2>
+          <ul class="social-list">
+              <li class="social-item"><a class="social-button" href="vk.com">Вконтакте</a></li>
+              <li class="social-item"><a class="social-button" href="facebook.com">Фейсбук</a></li>
+              <li class="social-item"><a class="social-button" href="instagram.com">Инстаграм</a></li>
+          </ul>
+          <p class="social-text">Давайте дружить, это выгодно!<br>
+              <span>Скидка 10% для друзей из социальных сетей.</span>
+          </p>
+      </section>
     </footer>
-</body>
-</html>
+  </body>
+  </html>
