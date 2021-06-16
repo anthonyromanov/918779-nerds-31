@@ -35,6 +35,10 @@
     font-weight: 400;
     color: var(--basic-extra-black);
     background-color: var(--basic-white);
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
   }
 
   a {
@@ -44,6 +48,18 @@
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  .zero {
+    padding: 0;
+    margin: 0;
+  }
+
+  .wrapper {
+    width: 1160px;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
   }
 
   button {
@@ -57,10 +73,22 @@
     background-color: var(--basic-grey-extra);
   }
 
+  .main-navigation {
+    width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+  }
+
+  .main-header-logo {
+    width: 160px;
+  }
+
   .main-navigation-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    justify-self: center;
   }
 
   .main-navigation-link {
@@ -84,6 +112,11 @@
     padding-bottom: 12px;
     color: var(--basic-black);
     border-bottom: 2px solid var(--basic-red);
+  }
+
+  .slider {
+    background-color: var(--basic-grey-extra);
+    margin-bottom: 80px;
   }
 
   .slider-heading {
@@ -118,7 +151,16 @@
   .services-list {
     padding: 0;
     margin: 0;
+    margin-bottom: 80px;
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+  }
+
+  .services-item {
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+    outline-offset: -5px;
   }
 
   .services-item h3 {
@@ -170,11 +212,30 @@
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   }
 
+  .index-inner {
+    width: 1160px;
+    padding: 0;
+    margin: 0;
+    padding-top: 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    column-gap: 40px;
+    margin-bottom: 73px;
+  }
+
+  .services-description {
+    width: 660px;
+  }
+
   .services-description-heading {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
     color: var(--basic-black);
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
   }
 
   .services-description-caption {
@@ -218,6 +279,14 @@
     color: var(--basic-extra-black);
   }
 
+  .clients {
+    margin-bottom: 80px;
+  }
+
+  .contacts-description {
+    margin: 54px 0;
+  }
+
   .contacts-description h3 {
     font-size: 18px;
     line-height: 30px;
@@ -235,7 +304,20 @@
     color: var(--basic-extra-black);
   }
 
+  .social {
+    width: 1160px;
+    margin: 68px auto;
+    padding: 0;
+  }
+
+  .social-inner {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 40px;
+  }
+
   .social-list {
+    width: 360px;
     padding: 0;
     margin: 0;
     list-style: none;
