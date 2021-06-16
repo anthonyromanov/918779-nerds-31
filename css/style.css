@@ -78,6 +78,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: min-content 1fr min-content;
+    margin-top: 50px;
   }
 
   .main-header-logo {
@@ -343,6 +344,8 @@
     line-height: 36px;
     font-weight: 700;
     color: var(--basic-black);
+    padding: 0;
+    margin: 0;
   }
 
   .social-text span {
@@ -357,6 +360,28 @@
     font-weight: 500;
     line-height: 55px;
     color: var(--basic-black);
+    width: 1160px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 105px;
+    margin-bottom: 118px;
+    text-align: center;
+  }
+
+  .inner-page {
+    width: 1160px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 40px;
+  }
+
+  .cost,
+  .mesh,
+  .features {
+    margin-bottom: 50px;
   }
 
   .filter h2,
@@ -414,6 +439,11 @@
     margin: 0;
   }
 
+  .pagination-list {
+    margin-top: 55px;
+    margin-bottom: 60px;
+  }
+
   .catalogue-link {
     color: var(--basic-extra-black);
   }
@@ -440,6 +470,11 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
+  }
+
+  .shop-catalogue {
+    width: 760px;
+    justify-self: end;
   }
 
   .catalogue-modal {
