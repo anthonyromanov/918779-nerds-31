@@ -77,8 +77,9 @@
     width: 1160px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: min-content 1fr min-content;
+    grid-template-columns: 160px 1fr min-content;
     margin-top: 50px;
+    justify-self: space-between;
   }
 
   .main-header-logo {
@@ -90,9 +91,21 @@
     padding: 0;
     margin: 0;
     justify-self: center;
+    display: flex;
+    width: 437px;
+    justify-content: space-around;
+    margin-top: 25px;
   }
 
-  .main-navigation-link {
+  .user-navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  .main-navigation-link,
+  .user-navigation-link {
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
@@ -100,11 +113,13 @@
     color: var(--basic-black);
   }
 
-  .main-navigation-link:hover {
+  .main-navigation-link:hover,
+  .user-navigation-link:hover {
     color: var(--basic-red);
   }
 
-  .main-navigation-link:focus {
+  .main-navigation-link:focus,
+  .user-navigation-link:focus {
     color: var(--basic-black);
     opacity: 0.3;
   }
@@ -117,6 +132,7 @@
 
   .slider {
     background-color: var(--basic-grey-extra);
+    padding-bottom: 80px;
     margin-bottom: 80px;
   }
 
@@ -159,16 +175,22 @@
     column-gap: 40px;
   }
 
-  .services-item {
-    outline: 5px solid rgba(0, 255, 0, 0.7);
-    outline-offset: -5px;
-  }
-
   .services-item h3 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    text-transform: uppercase;
     color: var(--basic-black);
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  .services-item p {
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 32px;
   }
 
   .button-green {
@@ -220,7 +242,7 @@
     padding-top: 40px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr min-content;
+    grid-template-columns: 1fr 360px;
     column-gap: 40px;
     margin-bottom: 73px;
   }
@@ -239,21 +261,46 @@
     margin-top: 40px;
   }
 
+  .services-description-text {
+    padding: 0;
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+
   .services-description-caption {
     font-weight: 700;
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
   }
 
   .services-description-list {
+    list-style: none;
     padding: 0;
     margin: 0;
-    list-style: none;
+    margin-top: 23px;
+  }
+
+  .services-description-item {
+    margin-top: 37px;
+  }
+
+  .services-description-item:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .statistic-logo {
+    width: 360px;
+    height: 208px;
+    margin-bottom: 37px;
   }
 
   .statistic-data-description {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--basic-black);
+    margin-bottom: 31px;
   }
 
   .statistic-data-cell {
@@ -261,14 +308,11 @@
     line-height: 64px;
     font-weight: 700;
     color: var(--basic-black);
+    padding: 0;
+    margin: 0;
   }
 
-  .statistic-data-cell span {
-    font-size: 26px;
-    line-height: 40px;
-  }
-
-  .statistic-data-cell span {
+ .statistic-data-cell span {
     font-size: 26px;
     line-height: 40px;
   }
@@ -282,6 +326,14 @@
 
   .clients {
     margin-bottom: 80px;
+  }
+
+  .clients-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
   }
 
   .contacts-description {
@@ -322,12 +374,18 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex;
+  }
+
+  .social-item {
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
   }
 
   .social-button {
     color: var(--basic-white);
     background-color: var(--basic-grey);
-    border-radius: 50%;
   }
 
   .social-button:hover {
