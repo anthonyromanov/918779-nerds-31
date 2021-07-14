@@ -1006,6 +1006,13 @@
     display: flex;
   }
 
+  .sort-group {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
   .sort-item {
     font-size: 14px;
     line-height: 18px;
