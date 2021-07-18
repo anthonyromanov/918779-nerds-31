@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-<head>
-	<meta charset="utf-8">
+<head>      
+    <meta charset="utf-8">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">  <!-- 180×180 -->
@@ -68,7 +68,7 @@
                     <button class="slider-nav slider-nav-current" type="button" aria-label="Первый слайд"></button>
                     <button class="slider-nav" type="button" aria-label="Второй слайд"></button>
                     <button class="slider-nav" type="button" aria-label="Третий слайд"></button>
-                </div>  
+                </div>
             </div>
         </section>
 
@@ -132,25 +132,25 @@
             <h2 class="visually-hidden">Клиенты</h2>
             <ul class="clients-list">
                 <li class="clients-item">
-                    <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <a class="clients-link" href="https://htmlacademy.ru/intensive/htmlcss">
                         <span class="visually-hidden">HTML Academy</span>
                         <img src="img/logo_htmlacademy.svg" width="199" height="57" alt ="Логотип «Html Academy»">
                     </a>
                 </li>
                 <li class="clients-item">
-                    <a href="#">
+                    <a class="clients-link" href="#">
                         <span class="visually-hidden">Бородинский</span>
                         <img src="img/borodinski.png" width="209" height="90" alt ="Логотип барбершопа «Бородинский»">
                     </a>
                 </li>
                 <li class="clients-item">
-                    <a href="#">
+                    <a class="clients-link" href="#">
                         <span class="visually-hidden">Pink</span>
                         <img src="img/pink.png" width="185" height="52" alt ="Логотип приложения «Пинк»">
                     </a>
                 </li>
                 <li class="clients-item">
-                    <a href="#">
+                    <a class="clients-link" href="#">
                         <span class="visually-hidden">Mishka</span>
                         <img src="img/mishka.png" width="173" height="84" alt ="Логотип магазина «Мишка»">
                     </a>
@@ -158,7 +158,7 @@
             </ul>
         </section>
     </main>
-    
+
     <footer>
         <section class="contacts">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224465563594!2d30.315220216136684!3d59.96826866667007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1626203314640!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" title="Офис компании по адресу набережная реки Карповки 5, литера П, Санкт-Петербург"></iframe>
@@ -185,7 +185,7 @@
                             </svg>
                         </a>
                     </li>
-              
+
                     <li class="social-item">
                         <a class="social-button" href="facebook.com">
                             <span class="visually-hidden">Фейсбук</span>
@@ -211,27 +211,27 @@
     </footer>
 
     <section class="modal modal-form">
-		    <h2>Напишите нам</h2>
-		      <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-			        <div class="modal-wrapper">
-				          <p class="modal-inner">
-					            <label for="user-name"><b>Ваше имя:</b></label>
-					            <input class="form-icon-name" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">			
-				          </p>
-				          <p class="modal-inner">
-					            <label for="user-email"><b>Ваш e-mail</b></label>
-					            <input class="form-icon-email" type="email" name="user-email" id="user-email" placeholder="email@example.com">			
-				          </p>
-			        </div>
-			        <p class="modal-inner">
-				          <label for="contact-text"><b>Текст письма:</b></label>
-				          <textarea class="form-icon-message" cols="250" rows="5" name="text" id="contact-text" placeholder="В свободной форме"></textarea>
-			        </p>
-			        <button class="button modal-btn" type="submit">Отправить</button>
-  			      <button class="modal-close" type="button" aria-label="Закрыть"></button>
-  		    </form>
+        <h2>Напишите нам</h2>
+            <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="modal-wrapper">
+                    <p class="modal-inner">
+                        <label for="user-name"><b>Ваше имя:</b></label>
+                        <input class="form-icon-name" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="modal-inner">
+                        <label for="user-email"><b>Ваш e-mail</b></label>
+                        <input class="form-icon-email" type="email" name="user-email" id="user-email" placeholder="email@example.com">
+                    </p>
+                </div>
+                <p class="modal-inner">
+                    <label for="contact-text"><b>Текст письма:</b></label>
+                    <textarea class="form-icon-message" cols="250" rows="5" name="text" id="contact-text" placeholder="В свободной форме"></textarea>
+                </p>
+                <button class="button modal-btn" type="submit">Отправить</button>
+                <button class="modal-close" type="button" aria-label="Закрыть"></button>
+            </form>
     </section>
-    
+
     <script src="js/script.min.js"></script>
 
 </body>
