@@ -389,18 +389,18 @@
 
     .button-grey {
         background-color: var(--basic-grey-extra);
-        color: var(--basic-black);    
+        color: var(--basic-black);
     }
 
     .button-grey:hover {
         background-color: var(--basic-hover-grey);
-        color: var(--basic-black);    
+        color: var(--basic-black);
     }
 
     .button-grey:focus,
     .button-grey:active {
         background-color: var(--basic-focus-grey);
-        color: var(--basic-black);   
+        color: var(--basic-black);
         box-shadow: inset 0px 3px 0px var(--basic-grey-shadow);
     }
 
@@ -607,7 +607,7 @@
         width: 100%;
         height: 416px;
         box-sizing: border-box;
-        position: relative;   
+        position: relative;
         z-index: 1;
         background-image: url("../img/map.png");
         background-size: cover;
@@ -820,7 +820,7 @@
     .range-controls .toggle-min {
         left: 18px;
     }
-    
+
     .range-controls .toggle-max {
         left: 160px;
     }
@@ -1042,7 +1042,7 @@
 
     .sort-group-category {
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 
     .sort-item {
@@ -1072,12 +1072,12 @@
 
     .sort-btn:hover {
         color: var(--basic-grey-light);
-        cursor: pointer;   
+        cursor: pointer;
     }
 
     .sort-btn:focus {
         color: var(--basic-black);
-        cursor: pointer;  
+        cursor: pointer;
     }
 
     .sort-btn:active {
@@ -1103,21 +1103,21 @@
 
     .sort-icon:hover path {
         fill: var(--basic-grey-light);
-        cursor: pointer;     
+        cursor: pointer;
     }
 
     .sort-icon:focus path {
         fill: var(--basic-black);
-        cursor: pointer;  
+        cursor: pointer;
     }
 
     .sort-icon:active path {
       fill: var(--basic-black);
-      cursor: pointer;    
+      cursor: pointer;
     }
 
     .sort-icon-active path {
-        fill: var(--basic-black);   
+        fill: var(--basic-black);
     }
 
     .catalogue-list,
@@ -1168,7 +1168,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+
     .catalogue-item {
         width: 360px;
         margin-bottom:  23px;
@@ -1176,7 +1176,7 @@
 
     .catalogue-item path {
         fill: var(--basic-grey-dark);
-        opacity: 0.12;    
+        opacity: 0.12;
     }
 
     .catalogue-link:hover path {
@@ -1229,7 +1229,7 @@
         padding: 26px 60px 44px 60px;
         box-sizing: border-box;
     }
-    
+
     .catalogue-modal:hover {
         filter: drop-shadow(0px 6px 15px var(--basic-drop-shadow));
     }
@@ -1294,12 +1294,18 @@
 
     .pagination-list {
         margin-top: 26px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
         display: flex;
+        flex-wrap: wrap;
     }
 
-    .pagination-item:not(:first-child) {
-        margin-left: 12px;
+    .pagination-item {
+        margin-right: 12px;
+        margin-bottom: 10px;
+    }
+
+    .pagination-item-next {
+        margin-right: 0;
     }
 
     .pagination-link {
@@ -1314,7 +1320,7 @@
         padding-right: 20px;
         padding-bottom: 15px;
         border-radius: 3%;
-        cursor: pointer; 
+        cursor: pointer;
         text-transform: uppercase;
         box-sizing: border-box;
     }
@@ -1325,7 +1331,7 @@
         padding-bottom: 15px;
         padding-right: 77px;
         border-radius: 3%;
-        cursor: pointer; 
+        cursor: pointer;
         text-transform: uppercase;
     }
 
@@ -1338,7 +1344,7 @@
 
     .pagination-link:hover {
         background-color: var(--basic-hover-grey);
-        color: var(--basic-black);    
+        color: var(--basic-black);
     }
 
     .pagination-link:focus {
@@ -1422,63 +1428,63 @@
     .form-icon-email::placeholder,
     .form-icon-message::placeholder {
         color: var(--basic-grey-special);
-        opacity: 0.5;    
+        opacity: 0.5;
     }
 
     .form-icon-name::-moz-placeholder,
     .form-icon-email::-moz-placeholder,
     .form-icon-message::-moz-placeholder {
         color: var(--basic-grey-special);
-        opacity: 0.5;    
+        opacity: 0.5;
     }
 
     .form-icon-name::-webkit-input-placeholder,
     .form-icon-email::-webkit-input-placeholder,
     .form-icon-message::-webkit-input-placeholder {
         color: var(--basic-grey-special);
-        opacity: 0.5;    
+        opacity: 0.5;
     }
 
     .form-icon-name:focus::placeholder,
     .form-icon-email:focus::placeholder,
     .form-icon-message:focus::placeholder {
         color: var(--basic-grey-special);
-        opacity: 1.0;    
+        opacity: 1.0;
     }
 
     .form-icon-name:focus::-moz-placeholder,
     .form-icon-email:focus::-moz-placeholder,
     .form-icon-message:focus::-moz-placeholder {
         color: var(--basic-grey-special);
-        opacity: 1.0;    
+        opacity: 1.0;
     }
 
     .form-icon-name:focus::-webkit-input-placeholder,
     .form-icon-email:focus::-webkit-input-placeholder,
     .form-icon-message:focus::-webkit-input-placeholder {
         color: var(--basic-grey-special);
-        opacity: 1.0;    
+        opacity: 1.0;
     }
 
     .form-icon-name:active::placeholder,
     .form-icon-email:active::placeholder,
     .form-icon-message:active::placeholder {
         color: var(--basic-grey-special);
-        opacity: 1.0;    
+        opacity: 1.0;
     }
 
     .form-icon-name:active::-moz-placeholder,
     .form-icon-email:active::-moz-placeholder,
     .form-icon-message:active::-moz-placeholder {
         color: var(--basic-grey-special);
-        opacity: 1.0;    
+        opacity: 1.0;
     }
 
     .form-icon-name:active::-webkit-input-placeholder,
     .form-icon-email:active::-webkit-input-placeholder,
     .form-icon-message:active::-webkit-input-placeholder {
         color: var(--basic-grey-special);
-        opacity: 1.0;    
+        opacity: 1.0;
     }
 
     .form-icon-name:hover,
